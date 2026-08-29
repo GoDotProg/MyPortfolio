@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap");
+
       :root {
         --bg-color: #292436;
         --card-bg: #202026;
@@ -26,6 +28,10 @@
         font-family: "Plus Jakarta Sans", sans-serif;
         background-image: linear-gradient(180deg, #131313 0%, #000000 100%);
         color: var(--text-main);
+      }
+
+      .font-jakarta {
+        font-family: "Plus Jakarta Sans", serif;
       }
 
       .font-mono-code {
@@ -121,20 +127,26 @@
         </h1>
 
         <p
-          class="text-base sm:text-lg text-muted leading-relaxed max-w-2xl font-normal"
+          class="text-base sm:text-lg text-muted leading-relaxed max-w-2xl font-sans"
         >
           I create 2d and 3d games using my beloved game engine
-          <span class="font-bold text-accent-gold"><a href="https://godotengine.org/" target="_blank">GODOT v4.8 Dev-3</a></span>
+          <span class="text-accent-gold"
+            ><a href="https://godotengine.org/" target="_blank"
+              >GODOT v4.8 Dev-3</a
+            ></span
+          >
           i create simple and complex mechanics like
           <abbr
-            title="Pathfinding is a mechanical process for finding the shortest path between two points"
+            title="Pathfinding is an algorithmic process for finding the shortest path between two points"
             >Pathfinding</abbr
           >
-          , Multiplayer,
+          , ULTRA Simple OS,
           <abbr title="Come on man, you dont know whats an AI ??">AI</abbr>, and
           more. I also create simple software using
-          <span class="font-bold text-accent-gold"><a href="https://www.python.org/" target="_blank">Python</a></span> programming
-          language
+          <span class="text-accent-gold"
+            ><a href="https://www.python.org/" target="_blank">Python</a></span
+          >
+          programming language
         </p>
 
         <div class="pt-2 flex items-center gap-4 text-sm">
@@ -194,9 +206,10 @@
                 href="./3Dgame.html"
                 class="text-accent-gold hover:underline font-semibold"
                 >Download &rarr;</a
-              > 
+              >
             </div>
           </div>
+        </div>
       </section>
 
       <section id="skills" class="space-y-6">
@@ -207,7 +220,9 @@
         </h2>
 
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          <div class="bg-custom-card border border-custom rounded-lg p-4 hover:shadow-lg transition-shadow duration-300 transform hover:scale-105">
+          <div
+            class="bg-custom-card border border-custom rounded-lg p-4 hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
+          >
             <p
               class="text-xs font-semibold text-accent-gold font-mono-code mb-1"
             >
@@ -217,7 +232,9 @@
             <p class="text-sm font-bold text-white">VSCode</p>
             <p class="text-xs text-muted mt-1">2D / 3D Games</p>
           </div>
-          <div class="bg-custom-card border border-custom rounded-lg p-4 hover:shadow-lg transition-shadow duration-300 transform hover:scale-105">
+          <div
+            class="bg-custom-card border border-custom rounded-lg p-4 hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
+          >
             <p
               class="text-xs font-semibold text-accent-gold font-mono-code mb-1"
             >
@@ -230,7 +247,9 @@
             <p class="text-sm font-bold text-white">C++ (beginner)</p>
             <p class="text-xs text-muted mt-1">Games, and Softwares</p>
           </div>
-          <div class="bg-custom-card border border-custom rounded-lg p-4 hover:shadow-lg transition-shadow duration-300 transform hover:scale-105">
+          <div
+            class="bg-custom-card border border-custom rounded-lg p-4 hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
+          >
             <p
               class="text-xs font-semibold text-accent-gold font-mono-code mb-1"
             >
@@ -245,7 +264,9 @@
             <p class="text-sm font-bold text-white">Webflow and Figma</p>
             <p class="text-xs text-muted mt-1">Responsive UI</p>
           </div>
-          <div class="bg-custom-card border border-custom rounded-lg p-4 hover:shadow-lg transform hover:scale-105">
+          <div
+            class="bg-custom-card border border-custom rounded-lg p-4 hover:shadow-lg transform hover:scale-105"
+          >
             <p
               class="text-xs font-semibold text-accent-gold font-mono-code mb-1"
             >
@@ -257,7 +278,7 @@
             <p class="text-sm font-bold text-white">Audacity</p>
             <p class="text-sm font-bold text-white">Github</p>
             <p class="text-sm font-bold text-white">Reddit</p>
-            <p class="text-sm font-bold text-white">Discord</p>            
+            <p class="text-sm font-bold text-white">Discord</p>
             <p class="text-sm font-bold text-white">Itch.io (for assets)</p>
             <p class="text-xs text-muted mt-1">3D Models & Pixel Art</p>
           </div>
@@ -275,9 +296,7 @@
             Contact
           </h2>
           <h3 class="text-xl font-bold text-white">Feedback or Question ??</h3>
-          <p class="text-sm text-muted">
-            Feedback Section
-          </p>
+          <p class="text-sm text-muted">Feedback Section</p>
         </div>
 
         <form
@@ -290,14 +309,14 @@
               type="text"
               placeholder="Your Name"
               name="name"
-              class="w-full bg-[#FFF] text-black border border-custom rounded-lg px-4 py-2.5 text-sm placeholder-slate-400 focus:outline-none focus:border-amber-400"
+              class="w-full bg-[#111] text-black border border-custom rounded-lg px-4 py-2.5 text-sm placeholder-slate-400 focus:outline-none focus:border-amber-400"
               required
             />
             <input
               type="email"
               name="email"
               placeholder="Your Email"
-              class="w-full bg-[#FFF] text-black border border-custom rounded-lg px-4 py-2.5 text-sm placeholder-slate-400 focus:outline-none focus:border-amber-400"
+              class="w-full bg-[#111] text-black border border-custom rounded-lg px-4 py-2.5 text-sm placeholder-slate-400 focus:outline-none focus:border-amber-400"
               required
             />
           </div>
@@ -305,7 +324,7 @@
             rows="4"
             name="message"
             placeholder="Your Message"
-            class="w-full bg-[#FFF] text-black border border-custom rounded-lg px-4 py-2.5 text-sm placeholder-slate-400 focus:outline-none focus:border-amber-400"
+            class="w-full bg-[#111] text-black border border-custom rounded-lg px-4 py-2.5 text-sm placeholder-slate-400 focus:outline-none focus:border-amber-400"
             required
           ></textarea>
           <button
@@ -322,9 +341,7 @@
       <div
         class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 font-medium"
       >
-        <p>
-          &copy; Copyright Dev10026. All for me, and only me...
-        </p>
+        <p>&copy; Copyright Dev10026. All for me, and only me...</p>
         <div class="flex gap-6">
           <a
             href="https://github.com/aim2012cv-hue"
